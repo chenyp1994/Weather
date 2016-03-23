@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="aqi_excellent">#5cb85c</color>
+    <color name="aqi_good">#DBDB70</color>
+    <color name="aqi_mild_pollution">#f0ad4e</color>
+    <color name="aqi_moderate_pollution">#d9534f</color>
+    <color name="aqi_high_pollution">#9F5F9F</color>
+    <color name="aqi_serious_pollution">#8E236B</color>
+    <color name="aqi_background_translucent">#30000000</color>
+
+    <color name="text_color_while">#FFFFFF</color>
+    <color name="text_color_gray">#545454</color>
+    <color name="title_color_pale_while">#BBBBBB</color>
+    
+</resources>

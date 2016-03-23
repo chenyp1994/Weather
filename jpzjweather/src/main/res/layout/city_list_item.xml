@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/id_rv_item_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        swipe:leftEdgeSwipeOffset="0dp"
+        swipe:rightEdgeSwipeOffset="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FF5534"
+            android:gravity="center"
+            android:tag="Bottom3"
+            android:weightSum="10">
+
+            <IconTextView
+                android:id="@+id/trash"
+                android:layout_width="17dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:text="@string/select_city_delete_icon"
+                android:textSize="@dimen/abc_text_size_large_material" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="是要删除城市吗?"
+                android:textColor="#fff"
+                android:textSize="@dimen/abc_text_size_small_material" />
+
+            <Button
+                android:id="@+id/id_rv_item_delete"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="4"
+                android:background="#ffffff"
+                android:text="是的,删除!"
+                android:textColor="#FF5534" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_selector"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <IconTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/select_city_icon"
+                android:textSize="@dimen/abc_text_size_large_material" />
+
+            <TextView
+                android:id="@+id/id_rv_item_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="南海"
+                android:textSize="@dimen/abc_text_size_medium_material" />
+
+            <TextView
+                android:id="@+id/id_rv_item_district"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="佛山"
+                android:textSize="@dimen/abc_text_size_medium_material" />
+
+            <TextView
+                android:id="@+id/id_rv_item_province"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:text="广东"
+                android:textSize="@dimen/abc_text_size_medium_material" />
+
+        </LinearLayout>
+
+    </com.daimajia.swipe.SwipeLayout>
+</LinearLayout>

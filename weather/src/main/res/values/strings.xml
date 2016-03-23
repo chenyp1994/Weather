@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Weather</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_share">分享</string>
+    <string name="action_search">查询城市</string>
+    <string name="action_about">关于</string>
+    <string name="service_weatherData_address">http://172.17.149.55:8080/WeatherService/GetWeatherData?city=</string>
+    <string name="service_furtWeather24_address">http://172.17.149.55:8080/WeatherService/GetFurtWeather24?city=</string>
+
+    <string name="main_title_select_city">选择城市</string>
+    <string name="main_title_select_share">分享</string>
+    <string name="main_title_city_name">城市</string>
+    <string name="main_title_current_time">当前时间</string>
+
+    <string name="weather_main_index_title">指数</string>
+
+    <string name="bottom_tab_weather_main">天气</string>
+    <string name="bottom_tab_immediate_view">时景</string>
+    <string name="bottom_tab_weather_hist">历史天气</string>
+    <string name="bottom_tab_user">我</string>
+
+</resources>

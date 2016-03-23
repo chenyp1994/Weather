@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/background_translucent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:id="@+id/id_tab_button_cloud"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <IconTextView
+            android:id="@+id/id_tab_icon_cloud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/bottom_tab_selected"
+            android:text="@string/bottom_tab_weather_main_icon"
+            android:textSize="@dimen/bottom_tab_icon_size" />
+
+        <TextView
+            android:id="@+id/id_tab_tv_weather_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/bottom_tab_weather_main_text"
+            android:textColor="@color/bottom_tab_selected"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:id="@+id/id_tab_button_photo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <IconTextView
+            android:id="@+id/id_tab_icon_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/text_color_gray"
+            android:text="@string/bottom_tab_immediate_view_icon"
+            android:textSize="@dimen/bottom_tab_icon_size" />
+
+        <TextView
+            android:id="@+id/id_tab_tv_immediate_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/bottom_tab_immediate_view_text"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/id_tab_button_hist"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <IconTextView
+            android:id="@+id/id_tab_icon_hist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/bottom_tab_weather_hist_icon"
+            android:textColor="@color/bottom_tab_unselected"
+            android:textSize="@dimen/bottom_tab_icon_size" />
+
+        <TextView
+            android:id="@+id/id_tab_tv_weather_hist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/bottom_tab_weather_hist_text"
+            android:textColor="@color/bottom_tab_unselected"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:id="@+id/id_tab_button_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <IconTextView
+            android:id="@+id/id_tab_icon_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/bottom_tab_user_icon"
+            android:textColor="@color/bottom_tab_unselected"
+            android:textSize="@dimen/bottom_tab_icon_size" />
+
+        <TextView
+            android:id="@+id/id_tab_tv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/bottom_tab_user_text"
+            android:textColor="@color/bottom_tab_unselected"
+            android:textSize="@dimen/abc_text_size_caption_material" />
+
+    </LinearLayout>-->
+
+</LinearLayout>

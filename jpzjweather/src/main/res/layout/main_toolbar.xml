@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_translucent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/id_rl_city"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/id_main_location_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:paddingRight="14dp"
+                android:contentDescription="@string/main_location_icon"
+                android:src="@drawable/main_city_location_icon" />
+
+            <TextView
+                android:id="@+id/id_text_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/main_title_city_name"
+                android:textColor="@color/text_color_while"
+                android:textSize="@dimen/abc_text_size_large_material" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/id_tv_current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_rl_city"
+            android:layout_centerHorizontal="true"
+            android:text="@string/main_title_current_time"
+            android:textColor="@color/title_color_pale_while"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator_default"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/id_tv_current_time"
+            android:layout_centerHorizontal="true"
+            app:ci_height="5dp"
+            app:ci_width="5dp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

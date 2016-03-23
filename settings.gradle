@@ -1,0 +1,5 @@
+include ':app', ':weather', ':weather_text', ':text', 'AndroidBootstrapSample',
+        ':MPChartLib', ':MPChartExample', ':AndroidRecyclerViewDemo',
+        ':coolWeather', ':weather_fmj', ':sample', ':library', ':jpzjweather'
+
+include ':pullToRefreshlibrary'

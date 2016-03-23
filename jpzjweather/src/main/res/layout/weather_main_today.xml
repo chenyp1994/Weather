@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/id_rl_weather_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:id="@+id/id_button_aqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/background_aqi_btn_radius">
+
+            <IconTextView
+                android:id="@+id/id_icon_aqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:padding="3dp"
+                android:text="@string/weather_fragment_today_icon_aqi"
+                android:textColor="@color/aqi_excellent"
+                android:textSize="@dimen/abc_text_size_small_material" />
+
+            <TextView
+                android:id="@+id/id_tv_api"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/id_icon_aqi"
+                android:layout_toRightOf="@id/id_icon_aqi"
+                android:padding="5dp"
+                android:text=" 23 优"
+                android:textColor="@color/text_color_while"
+                android:textSize="@dimen/abc_text_size_small_material" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/id_tv_updateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_color_while"
+            android:padding="5dp"
+            android:text="周二 06月23日 18:15:56 发布"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/id_rl_weather_medium_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_rl_weather_top"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/id_img_weather_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="天气图标"
+            android:src="@drawable/d02" />
+
+        <TextView
+            android:id="@+id/id_tv_curTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/id_img_weather_icon"
+            android:layout_toRightOf="@id/id_img_weather_icon"
+            android:textColor="@color/text_color_while"
+            android:text="27℃"
+            android:textSize="@dimen/abc_text_size_display_3_material" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_rl_weather_medium_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_rl_weather_medium_01"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/id_tv_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/text_color_while"
+            android:text="中雨"
+            android:textSize="@dimen/abc_text_size_large_material" />
+
+        <TextView
+            android:id="@+id/id_tv_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/id_tv_weather"
+            android:layout_toRightOf="@id/id_tv_weather"
+            android:padding="5dp"
+            android:textColor="@color/text_color_while"
+            android:text="26 ~ 30℃"
+            android:textSize="@dimen/abc_text_size_large_material" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_rl_weather_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_rl_weather_medium_02"
+        android:layout_centerHorizontal="true">
+
+        <IconTextView
+            android:id="@+id/id_icon_location_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_color_while"
+            android:text="@string/weather_fragment_top_icon_location_arrow"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/id_tv_windD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toEndOf="@id/id_icon_location_arrow"
+            android:layout_toRightOf="@id/id_icon_location_arrow"
+            android:padding="2dp"
+            android:textColor="@color/text_color_while"
+            android:text="东南风"
+            android:textSize="@dimen/abc_text_size_large_material" />
+
+        <TextView
+            android:id="@+id/id_tv_windS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toEndOf="@id/id_tv_windD"
+            android:layout_toRightOf="@id/id_tv_windD"
+            android:padding="2dp"
+            android:textColor="@color/text_color_while"
+            android:text="2级"
+            android:textSize="@dimen/abc_text_size_large_material" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

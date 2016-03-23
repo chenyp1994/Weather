@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="@color/index_background_main">
+
+    <RelativeLayout
+        android:id="@+id/id_rl_index_title"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content">
+
+        <IconTextView
+            android:id="@+id/id_icon_index_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/weather_main_index_title_icon"
+            android:textColor="@color/text_color_while"
+            android:textSize="@dimen/abc_text_size_large_material" />
+
+        <TextView
+            android:id="@+id/id_tv_index_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/id_icon_index_title"
+            android:layout_toRightOf="@id/id_icon_index_title"
+            android:padding="5dp"
+            android:text="@string/weather_main_index_title"
+            android:textColor="@color/text_color_while"
+            android:textSize="@dimen/abc_text_size_medium_material" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_rv_weather_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:scrollbars="none"
+        android:layout_below="@id/id_rl_index_title" />
+
+</RelativeLayout>

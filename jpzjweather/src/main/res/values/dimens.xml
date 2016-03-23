@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="toolbar_icon_size">28sp</dimen>
+    <dimen name="bottom_tab_icon_size">22sp</dimen>
+    <dimen name="title_btn_icon_size">28sp</dimen>
+    <color name="background_translucent">#50000000</color>
+
+</resources>

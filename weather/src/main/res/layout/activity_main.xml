@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dusk"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/id_main_title"
+        layout="@layout/main_title" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewPager_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_main_title"
+        android:background="@color/background_translucent" />
+
+    <include layout="@layout/bottom_tabs" />
+
+</RelativeLayout>
